@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <meta charsert="UTF-8">
+
+    <title>Unir tres Apis 😊</title>
+     <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./sample.js"></script>
+  </head>
+  <body>
+<header>
+
+  </header>
+
+      <br>
+      <div id="lista">
+          <label for="ciudades">Seleccione la ciudad</label>
+        <form id= "lista" name="lista" method="POST" action="sample.js">
+
+          <select id="ciudades" name="ciudades">
+            <option disabled selected>Ciudad</option>
+            <option value=Asuncion>Asunción</option>
+            <option value=Bogota>Bogotá</option>
+            <option value=Brasilia>Brasilia</option>
+            <option value=BuenosAires>BuenosAires</option>
+            <option value=Caracas>Caracas</option>
+            <option value=Georgetown>Georgetown</option>
+            <option value=Lima>Lima</option>
+            <option value=Montevideo>Montevideo</option>
+            <option value=Paramaribo>Paramaribo</option>
+            <option value=Quito>Quito</option>
+            <option value=SantiagodeChile>Santiagodechile</option>
+            <option value=Sucre>Sucre</option>
+        </select>
+
+        <div>
+          <p><label class="bold" for="state">Estado: </label><span id="state"></span></p>
+          <p><label class="bold" for="temp">Temperatura actual: </label><span id="temp"></span></p>
+          <p><label class="bold" for="max_temp">Temperatura máxima: </label><span id="max_temp"></span></p>
+          <p><label class="bold" for="min_temp">Temperatura mínima: </label><span id="min_temp"></span></p>
+          <p><label class="bold" for="country">País: </label><span id="country"></span></p>
+        </div>
+
+        <diV>
+
+        <div id="map"></div>
+        <p></p>
+        <img id="flagImg" src="">
+
+        <h1><b><p id="countryName" style="text-align: center;"></p></b></h1>
+      </diV>
+
+        <div>
+
+          <p><label class="bold" for="capital">Capital: </label><span id="capital"></span></p>
+          <p><label class="bold" for="dial_code">Dialing code: </label><span id="dial_code"></span></p>
+          <p><label class="bold" for="population">Habitantes: </label><span id="population"></span></p>
+          <p><label class="bold" for="currency">Moneda: </label><span id="currency"></span></p>
+          <p><label class="bold" for="region">Región: </label><span id="region"></span></p>
+          <p><label class="bold" for="sub_region">Subregión: </label><span id="sub_region"></span></p>
+
+
+        </div>
+
+        <div>
+
+          <p><label class="bold" for="countryName">Pais: </label><span id="countryName"></span></p>
+          <p><label class="bold" for="new">Casos nuevos: </label><span id="new"></span></p>
+          <p><label class="bold" for="active">Casos Activos </label><span id="active"></span></p>
+          <p><label class="bold" for="critical">Casos críticos: </label><span id="critical"></span></p>
+          <p><label class="bold" for="recovered">Recuperados: </label><span id="recovered"></span></p>
+          <p><label class="bold" for="total">Total de Casos: </label><span id="total"></span></p>
+
+
+        </div>
+
+
+      </form>
+
+
+        </br>
+    <br>
+    <br>
+
+
+</br>
+</br>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVA7ucKd87sAmegG5H6-k16Io-MR-ZcfA&callback=initMap&libraries=&v=weekly"
+      async>
+    </script>
+    <footer>
+      &copy;2021 ciudades de Suramérica
+  </footer>
+
+
+  </body>
+</html>

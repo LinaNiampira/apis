@@ -1,0 +1,28 @@
+#map {
+  height: 500px;
+  width: 60%;
+  margin: 100, 100, 10, 20;
+  padding: 30;
+}
+
+html,
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: cornsilk;
+  height: 70%;
+  margin: 3, 3, 30, 30;
+  padding: 30;
+}
+header {
+  height: 300px;
+  width: 100%;
+  background-image: url(Ciudades\ de\ Suramerica.jpg);
+}
+
+.bold {
+  font-weight: bold;
+}
+footer {
+  font-size: 80%;
+  padding: 7px 0px 0px 20px;
+}
