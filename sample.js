@@ -123,6 +123,7 @@ function loadWeather(nameCity){
 
           //llamada a la API de Covid
 function loadCountryCovid() {
+	let country;
 
 fetch('https://covid-193.p.rapidapi.com/statistics?country='+country, {
 	"method": "GET",
@@ -136,11 +137,11 @@ fetch('https://covid-193.p.rapidapi.com/statistics?country='+country, {
 	
   var dataCov= data[0];
 	
-     $("#new").text(dataCov['cases']['new'])
-      $("#active").textCov(data['cases']['active'])
-      $("#critical").textcov(data['cases']['critical'])
-      $("#recovered").textCov(data['cases']['recovered'])
-	$("#total").textCov(data['cases']['total'])
+     $("#new").text(datacov['cases']['new'])
+      $("#active").text(datacov['cases']['active'])
+      $("#critical").text(datacov['cases']['critical'])
+      $("#recovered").text(datacov['cases']['recovered'])
+	$("#total").text(datacov['cases']['total'])
 
 })
 .catch(err => alert("error:"+err))
