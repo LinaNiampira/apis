@@ -134,6 +134,7 @@ fetch('https://covid-193.p.rapidapi.com/statistics?country='+country, {
 .then(data => {
 	
   var dataCov= data[0];
+	var countrycov = country[0];
 	
      $("#new").text(datacov['cases']['new'])
       $("#active").text(datacov['cases']['active'])
