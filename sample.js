@@ -67,8 +67,6 @@ function loadWeather(nameCity){
 
 
         $("#countryName").text(indivData['name'])
-
-
         $("#capital").text(indivData['capital'])
         $("#dial_code").text("+"+indivData['callingCodes'][0])
         $("#population").text(indivData['population'])
@@ -123,7 +121,7 @@ function loadWeather(nameCity){
 
           //llamada a la API de Covid
 function loadCountryCovid() {
-	let country;
+	
 
 fetch('https://covid-193.p.rapidapi.com/statistics?country='+country, {
 	"method": "GET",
