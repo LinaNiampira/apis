@@ -122,7 +122,7 @@ function loadWeather(nameCity){
           })
 
           //llamada a la API de Covid
-function loadCountryCovid(name) {
+function loadCountryCovid() {
 
 fetch('https://covid-193.p.rapidapi.com/statistics?country='+country, {
 	"method": "GET",
