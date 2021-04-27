@@ -1,9 +1,6 @@
 "use strict";
 let map;
 
-//**var Bogota =document.getElementById('Bogota');**//
-//** Bogota.addEventListener('Click',function ('Bogota') {})**//
-
 function initMap() {
 
 
@@ -19,10 +16,10 @@ function initMap() {
 
   $("#ciudades").change(function () {
       var optionSelected = $(this).find("option:selected");
-      var valueSelected = optionSelected.val(); //Nombre de ciudad
+      var valueSelected = optionSelected.val(); //carga el nombre de ciudad seleccionada en el form 
 console.log(valueSelected)
 
-//carag de datos
+//carga de datos
 loadCity(valueSelected)
 loadWeather(valueSelected)
 loadCountryData(valueSelected)
@@ -31,7 +28,7 @@ loadCountryCovid(valueSelected)
 
   });
   map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 30.06263 , lng: 31.24967 },
+    center: { lat: 30.06263 , lng: 31.24967 },// Coordenadas del Cairo, dónde se iniciaa el Mapa siemrpe que se refresque la pág. -- Falta poner el apuntador para que se vea la ciudad de referencia
     zoom: 5,
   });
 
@@ -138,7 +135,7 @@ fetch('https://covid-193.p.rapidapi.com/statistics?country='+country, {
 .then(data => {
 	console.log(JSON.stringify(data))
   var dataCov= data[0];
-$("#countryName").text(dataCov['country'])
+$("#countryName").text(dataCov['name'])
 $("#cases").text(dataCov['new'])
 $("#cases").text(dataCov['active'])
 $("#cases").text(dataCov['critical'])
